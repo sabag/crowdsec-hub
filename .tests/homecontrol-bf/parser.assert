@@ -1,0 +1,2 @@
+results["s01-parse"]["homecontrol"][0].Success == true
+results["s01-parse"]["homecontrol"][0].Evt.Parsed["source_ip"] == "151.101.67.5"

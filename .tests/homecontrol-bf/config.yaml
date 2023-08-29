@@ -1,0 +1,12 @@
+parsers:
+- crowdsecurity/syslog-logs
+- crowdsecurity/dateparse-enrich
+- ./parsers/s01-parse/homecontrol/homecontrol.yaml
+scenarios:
+- ./scenarios/homecontrol/homecontrol-bf.yaml
+postoverflows:
+- ""
+log_file: homecontrol-bf.log
+log_type: homecontrol
+labels: {}
+ignore_parsers: true

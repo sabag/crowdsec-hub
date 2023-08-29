@@ -1,0 +1,7 @@
+2023-08-27 14:44:03.001  WARN [http-nio-8080-exec-1] HomeAccessDeniedHandler : XCONTROL_UNAUTHORIZED_ACCESS 151.101.67.5 uri: /upnp/api/ha/config/v1
+2023-08-27 14:44:13.002  WARN [http-nio-8080-exec-2] HomeAccessDeniedHandler : XCONTROL_UNAUTHORIZED_ACCESS 151.101.67.5 uri: /upnp/api/ha/config/v2
+2023-08-27 14:44:23.003  WARN [http-nio-8080-exec-3] HomeAccessDeniedHandler : XCONTROL_UNAUTHORIZED_ACCESS 151.101.67.5 uri: /upnp/api/ha/config/v3
+2023-08-27 14:44:33.004  WARN [http-nio-8080-exec-4] HomeAccessDeniedHandler : XCONTROL_UNAUTHORIZED_ACCESS 151.101.67.5 uri: /upnp/api/ha/config/v4
+2023-08-27 14:44:43.005  WARN [http-nio-8080-exec-5] HomeAccessDeniedHandler : XCONTROL_UNAUTHORIZED_ACCESS 151.101.67.5 uri: /upnp/api/ha/config/v5
+2023-08-27 14:44:53.006  WARN [http-nio-8080-exec-6] HomeAccessDeniedHandler : XCONTROL_UNAUTHORIZED_ACCESS 151.101.67.5 uri: /upnp/api/ha/config/v6
+

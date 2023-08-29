@@ -1,0 +1,20 @@
+filter: 1 == 1
+debug: true
+onsuccess: next_stage
+name: crowdsecurity/homecontrol
+pattern_syntax:
+  HOMECONTROL_UNAUTH: '%{DATESTAMP:event_timestamp} %{GREEDYDATA} XCONTROL_UNAUTHORIZED_ACCESS %{IP:source_ip} uri: %{PATH:request_uri}'
+nodes:
+  - grok:
+      name: "HOMECONTROL_UNAUTH"
+      apply_on: message
+      statics:
+        - meta: log_type
+          value: homecontrol_unauthorized
+        - target: evt.StrTime
+          expression: evt.Parsed.event_timestamp
+statics:
+  - meta: service
+    value: homecontrol
+  - meta: source_ip
+    expression: "evt.Parsed.source_ip"

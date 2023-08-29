@@ -1,0 +1,12 @@
+type: leaky
+name: crowdsecurity/homecontrol-bf
+description: "Detect homecontrol bruteforce unauthorized"
+filter: evt.Meta.log_type == 'homecontrol_unauthorized'
+groupby: evt.Meta.source_ip
+leakspeed: 1m
+capacity: 5
+blackhole: 1m
+labels:
+  service: homecontrol
+  type: bruteforce
+  remediation: true
